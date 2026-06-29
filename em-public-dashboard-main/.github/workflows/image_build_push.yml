@@ -1,0 +1,122 @@
+name: docker-image-push-public-dash
+
+on:
+  push:
+    branches: [ main ]
+    
+  workflow_dispatch:
+    inputs:
+      docker_image_tag:
+        description: "Latest Docker image tags passed from e-mission-server repository on image build and push"
+        required: true
+
+env:
+  DOCKER_USER: ${{secrets.DOCKER_USER}}
+  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      DOCKER_TAG_FROM_WORKFLOW_DISPATCH: ${{ github.event.inputs.docker_image_tag }}
+      
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set docker image tag from .env file
+      run: |
+        set -a; source .env; set +a
+        echo "Restoring latest server image tag from .env"
+        echo "DOCKER_TAG_FROM_PUSH=${SERVER_IMAGE_TAG}" >> $GITHUB_ENV
+
+    - name: Set docker image tag from .env.repoTags file
+      run: |
+        set -a; source .env.repoTags; set +a
+        echo "Restoring latest frontend image tag from .env.repoTags"
+        echo "FRONTEND_IMAGE_TAG=${FRONTEND_IMAGE_TAG}" >> $GITHUB_ENV
+
+    - name: Print input docker image tag
+      run: |
+        echo "Event name: ${{ github.event_name }}"
+        echo "Latest docker image tag (push): ${{ env.DOCKER_TAG_FROM_PUSH }}"
+        echo "Latest docker image tag (workflow_dispatch): ${{ env.DOCKER_TAG_FROM_WORKFLOW_DISPATCH }}"
+        echo "Current frontend image tag (push): ${{ env.FRONTEND_IMAGE_TAG }}"
+
+    - name: docker login
+      run: | # log into docker hub account
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+
+    - name: Get current date # get the date of the build
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+
+    - name: Run a one-line script
+      run: echo running in repo ${GITHUB_REPOSITORY#*/} branch ${GITHUB_REF##*/} on ${{ steps.date.outputs.date }}
+
+    - name: build docker image
+      run: |
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          SERVER_IMAGE_TAG=$DOCKER_TAG_FROM_WORKFLOW_DISPATCH docker compose -f docker-compose.yml build
+        else
+          SERVER_IMAGE_TAG=$DOCKER_TAG_FROM_PUSH docker compose -f docker-compose.yml build
+        fi
+        docker images
+
+    - name: rename docker images
+      run: |
+        if [ "${{ github.event_name }}" == "push" ]; then
+          docker image tag em-pub-dash-prod/frontend:latest $DOCKER_USER/${GITHUB_REPOSITORY#*/}_frontend:${GITHUB_REF##*/}_${{ steps.date.outputs.date }}
+          echo "FRONTEND_IMAGE_TAG=${{ steps.date.outputs.date }}" >> $GITHUB_ENV
+        fi
+        docker image tag em-pub-dash-prod/viz-scripts:latest $DOCKER_USER/${GITHUB_REPOSITORY#*/}_notebook:${GITHUB_REF##*/}_${{ steps.date.outputs.date }}
+        echo "NOTEBOOK_IMAGE_TAG=${{ steps.date.outputs.date }}" >> $GITHUB_ENV
+
+    - name: push docker images
+      run: |
+        if [ "${{ github.event_name }}" == "push" ]; then
+          docker push $DOCKER_USER/${GITHUB_REPOSITORY#*/}_frontend:${GITHUB_REF##*/}_${{ steps.date.outputs.date }}
+        fi
+        docker push $DOCKER_USER/${GITHUB_REPOSITORY#*/}_notebook:${GITHUB_REF##*/}_${{ steps.date.outputs.date }}
+
+    - name: Update .env file 
+      run: |
+        if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+          echo "Workflow_dispatch: New server image built and pushed, Updating image tag in .env"
+          echo "SERVER_IMAGE_TAG=$DOCKER_TAG_FROM_WORKFLOW_DISPATCH" > .env
+        else
+          echo "Push event: New frontend image built and pushed, Updating image tag in .env.repoTags"
+          echo "FRONTEND_IMAGE_TAG=${{ steps.date.outputs.date }}" > .env.repoTags
+        fi
+  
+    - name: Add, Commit, Push changes to .env file
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Github Actions bot to update .env with latest tags"
+        if git diff --quiet; then
+          echo "Latest timestamps already present in .env files, no changes to commit"
+        else
+          git add .env .env.repoTags
+          git commit -m "Updated docker image tags in .env files to the latest timestamps"
+          git push origin 
+        fi
+   
+    - name: Create tag files
+      run: |
+        echo ${{ env.FRONTEND_IMAGE_TAG }} > frontend_tag_file.txt
+        echo ${{ env.NOTEBOOK_IMAGE_TAG }} > notebook_tag_file.txt
+        echo "Created tag text files"
+
+    - name: Upload Frontend Tag Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: frontend-image-tag
+        path: frontend_tag_file.txt
+        overwrite: true
+  
+    - name: Upload Notebook Tag Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: notebook-image-tag
+        path: notebook_tag_file.txt
+        overwrite: true

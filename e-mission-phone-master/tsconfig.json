@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "module": "es6",
+    "target": "es5",
+    "strictNullChecks": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "typeRoots": ["node_modules/@types", "www/js/types"],
+  },
+  "include": ["www/**/*"],
+  "exclude": ["**/node_modules/*", "**/dist/*"],
+}

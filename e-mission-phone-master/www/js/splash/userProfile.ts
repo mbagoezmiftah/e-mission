@@ -1,0 +1,98 @@
+import DeploymentConfig from 'op-deployment-configs';
+import { getUser, updateUser } from '../services/commHelper';
+import { initPushNotify } from './pushNotifySettings';
+import { getDeviceSettings } from './storeDeviceSettings';
+import { logDebug } from '../plugin/logger';
+import { addStatReading } from '../plugin/clientStats';
+
+export type ReminderPrefs = {
+  reminder_assignment: string; // e.g., 'weekly', 'passive
+  reminder_join_date: string; // e.g., '2023-05-09'
+  reminder_time_of_day: string; // e.g., '21:00'
+};
+
+export type DeviceInfo = {
+  phone_lang: string; // e.g., 'en'
+  curr_platform: string; // e.g., 'ios'
+  manufacturer: string; // e.g., 'Apple'
+  model: string; // e.g., 'iPhone18,3'
+  client_os_version: string; // e.g., '14.4'
+  client_app_version: string; // e.g., '3.2.1'
+};
+
+export type PushNotifySettings = {
+  device_token: string;
+  curr_sync_interval: number;
+};
+
+// from emission.analysis.result.user_stat
+export type ServerUserStats = {
+  // last call timestamps
+  last_call_ts: number;
+  last_sync_ts: number;
+  last_put_ts: number;
+  last_diary_fetch_ts: number;
+
+  // timestamps of the most recently collected phone data
+  last_location_ts: number;
+  last_phone_data_ts: number;
+
+  // "pipeline dependent user stats"
+  pipeline_range: {
+    start_ts: number;
+    end_ts: number;
+  };
+  total_trips: number;
+  labeled_trips: number;
+};
+
+export type UserProfile = {
+  config_version: DeploymentConfig['version'];
+} & PushNotifySettings &
+  DeviceInfo &
+  Partial<ReminderPrefs> &
+  Partial<ServerUserStats>;
+
+/**
+ * Registers the user for push notifications and updates the user profile with
+ * updated push notification settings and device settings.
+ * @returns Promise that resolves to the updated user profile
+ */
+export async function registerAndUpdateProfile(appConfig: DeploymentConfig): Promise<UserProfile> {
+  logDebug('userProfile: registerAndUpdateProfile called');
+  const promiseResults = await Promise.allSettled([
+    getUser(),
+    initPushNotify(),
+    getDeviceSettings(),
+  ]);
+  let [currUserProfile, pushNotifySettings, deviceSettings] = promiseResults.map((r) =>
+    r.status == 'fulfilled' ? r.value : undefined,
+  ) as [UserProfile | undefined, PushNotifySettings | undefined, DeviceInfo | undefined];
+  logDebug(`App: registerAndUpdateProfile: currUserProfile = ${JSON.stringify(currUserProfile)}
+    pushNotifySettings = ${JSON.stringify(pushNotifySettings)}
+    deviceSettings = ${JSON.stringify(deviceSettings)}`);
+  const userProfileUpdate = {
+    config_version: appConfig.version,
+    ...pushNotifySettings,
+    ...deviceSettings,
+  };
+  return updateUserProfile(userProfileUpdate, currUserProfile as UserProfile);
+}
+
+export async function updateUserProfile(
+  profileUpdate: Partial<UserProfile>,
+  currProfile: UserProfile | null,
+) {
+  if (!currProfile) {
+    logDebug('App: updateUserProfile called without current profile, fetching from server');
+    currProfile = (await getUser()) as UserProfile;
+  }
+  const updatedProfile = { ...currProfile, ...profileUpdate };
+  // update only if the profile will change
+  if (JSON.stringify(currProfile) != JSON.stringify(updatedProfile)) {
+    logDebug('App: updating user profile with new settings');
+    await updateUser(profileUpdate);
+    addStatReading('update_user_profile', profileUpdate);
+  }
+  return updatedProfile;
+}

@@ -1,0 +1,21 @@
+# python 3
+ARG SERVER_IMAGE_TAG
+FROM shankari/e-mission-server:master_${SERVER_IMAGE_TAG}
+
+VOLUME /plots
+
+ADD docker/environment36.dashboard.additions.yml /
+
+WORKDIR /usr/src/app
+
+RUN /bin/bash -c "source setup/activate.sh && conda env update --name emission --file setup/environment36.notebook.additions.yml"
+RUN /bin/bash -c "source setup/activate.sh && conda env update --name emission --file /environment36.dashboard.additions.yml"
+
+ADD docker/start_notebook.sh /usr/src/app/.docker/start_notebook.sh
+RUN chmod u+x /usr/src/app/.docker/start_notebook.sh
+
+ADD docker/crontab /usr/src/app/crontab
+
+EXPOSE 8888
+
+CMD ["/bin/bash", "/usr/src/app/.docker/start_notebook.sh"]

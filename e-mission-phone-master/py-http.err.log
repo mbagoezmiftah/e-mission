@@ -1,0 +1,6 @@
+127.0.0.1 - - [30/May/2026 13:31:28] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [30/May/2026 13:32:26] code 404, message File not found
+127.0.0.1 - - [30/May/2026 13:32:26] "GET /cordova.js HTTP/1.1" 404 -
+127.0.0.1 - - [30/May/2026 13:32:26] code 404, message File not found
+127.0.0.1 - - [30/May/2026 13:32:26] "GET /bundle.js HTTP/1.1" 404 -
+127.0.0.1 - - [30/May/2026 13:32:32] "GET /dist/bundle.js HTTP/1.1" 200 -

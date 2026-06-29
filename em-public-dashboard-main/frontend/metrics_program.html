@@ -1,0 +1,35 @@
+<!-- Generic -->
+<option value="ntrips_total" data-sizex="10" data-sizey="4">Number of trips</option>
+<option value="ntrips_under80" data-sizex="10" data-sizey="4">Number of trips (under 80th percentile of total trips)</option>
+<option value="ntrips_commute_mode_confirm" data-sizex="10" data-sizey="4">Number of commute trips</option>
+<option value="total_trip_length" data-sizex="10" data-sizey="4">Total trip length (${data.display_config.use_imperial}) covered by mode</option>
+<option value="total_trip_length_land" data-sizex="10" data-sizey="4">Total trip length (${data.display_config.use_imperial}) covered by mode on land</option>
+<option value="ntrips_purpose" data-sizex="10" data-sizey="4">Number of trips by purpose</option>
+<option value="average_miles_mode_confirm" data-sizex="6" data-sizey="4">Average trip length (${data.display_config.use_imperial})</option>
+<option value="average_miles_sensed_mode" data-sizex="6" data-sizey="4">Average trip length (${data.display_config.use_imperial}) (sensed)</option>
+<option value="ntrips_per_day" data-sizex="6" data-sizey="4">Trip frequency</option>
+<option value="ntrips_sensed_per_day" data-sizex="6" data-sizey="4">Trip frequency (sensed)</option>
+<option value="ntrips_per_weekday" data-sizex="6" data-sizey="4">Trip frequency (weekday)</option>
+<option value="ntrips_sensed_per_weekday" data-sizex="6" data-sizey="4">Trip frequency (weekday, sensed)</option>
+<option value="ts_emissions_user" data-sizex="8" data-sizey="2">Timeseries of emissions</option>
+<option value="ts_energy_user" data-sizex="8" data-sizey="2">Timeseries of energy</option>
+<option value="ts_emissions_vmt" data-sizex="8" data-sizey="2">Timeseries of emissions per ${data.display_config.use_imperial}</option>
+<option value="ts_users" data-sizex="8" data-sizey="2">Timeseries of active users</option>
+<option value="ts_all_modes" data-sizex="8" data-sizey="2">Timeseries of all mode shares</option>
+<option value="ts_totalvlabeled" data-sizex="8" data-sizey="2">Timeseries of Total and Labeled Trip Counts</option>
+<!-- Mode Specific -->
+<option value="ntrips_${data.intro.mode_studied}_purpose" data-sizex="10" data-sizey="4">`${data.intro.mode_studied}` specific trip count by purpose</option>
+<option value="ntrips_${data.intro.mode_studied}_total" data-sizex="10" data-sizey="4">`${data.intro.mode_studied}` specific number of trips by replaced mode</option>
+<option value="total_trip_length_${data.intro.mode_studied}_replaced_mode" data-sizex="10" data-sizey="4">`${data.intro.mode_studied}` specific trip length (${data.display_config.use_imperial}) by replaced mode</option>
+<option value="average_miles_replaced_mode" data-sizex="6" data-sizey="4">Average ${data.display_config.use_imperial} for each replaced mode (w/Other)</option>
+<option value="ntrips_${data.intro.mode_studied}_per_day" data-sizex="6" data-sizey="4">`${data.intro.mode_studied}` specific Trip frequency</option>
+<option value="ntrips_${data.intro.mode_studied}_per_weekday" data-sizex="6" data-sizey="4">`${data.intro.mode_studied}` specific Trips per weekday</option>
+<option value="sketch_energy_impact_${data.intro.mode_studied}" data-sizex="6" data-sizey="4">Sketch of `${data.intro.mode_studied}` specific energy impact</option>
+<option value="sketch_CO2impact_${data.intro.mode_studied}" data-sizex="6" data-sizey="4">Sketch of `${data.intro.mode_studied}` specific emission impact</option>
+<option value="ts_${data.intro.mode_studied}_share" data-sizex="8" data-sizey="2">Timeseries of `${data.intro.mode_studied}` specific trips</option>
+<option value="ts_${data.intro.mode_studied}_miles" data-sizex="8" data-sizey="2">Timeseries of `${data.intro.mode_studied}` specific distance</option>
+<option value="ts_${data.intro.mode_studied}_miles_user" data-sizex="8" data-sizey="2">Timeseries of `${data.intro.mode_studied}` specific distance per user</option>
+<option value="ts_${data.intro.mode_studied}_miles_proportion" data-sizex="8" data-sizey="2">Timeseries of proportion of `${data.intro.mode_studied}` specific distance (${data.display_config.use_imperial})</option>
+<option value="ts_${data.intro.mode_studied}_trips_proportion" data-sizex="8" data-sizey="2">Timeseries of mileage per user</option>
+<option value="ts_${data.intro.mode_studied}_trip_individual_variation" data-sizex="8" data-sizey="2">`${data.intro.mode_studied}` specific trip variation over time</option>
+<option value="ts_${data.intro.mode_studied}_mile_individual_variation" data-sizex="8" data-sizey="2">`${data.intro.mode_studied}` specific distance variation over time</option>

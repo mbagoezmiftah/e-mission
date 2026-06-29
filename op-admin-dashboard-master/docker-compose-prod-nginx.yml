@@ -1,0 +1,55 @@
+# docker-compose-prod-ngnix.yml
+# used for testing with the ngnix reverse proxy
+version: "3"
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        SERVER_IMAGE_TAG: ${SERVER_IMAGE_TAG}
+    image: e-mission/opdash:0.0.1
+    environment:
+      DASH_DEBUG_MODE: "True"
+      DASH_SILENCE_ROUTES_LOGGING: "False"
+      DASH_SERVER_PORT: 8050
+      DB_HOST: db
+      WEB_SERVER_HOST: 0.0.0.0
+      SERVER_BRANCH: master
+      CONFIGS_URL: "https://raw.githubusercontent.com/e-mission/op-deployment-configs/main/configs/"
+      STUDY_CONFIG: "stage-program"
+      AUTH_TYPE: "basic" # the other option is cognito
+      DASH_REQUESTS_PATHNAME_PREFIX: "/admin/"
+      REACT_VERSION: "18.2.0"
+    networks:
+       - emission
+    deploy:
+      restart_policy:
+          condition: on-failure
+    depends_on:
+      - db
+      - nginxrp
+  db:
+    image: mongo:4.4.0
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    networks:
+       - emission
+  nginxrp:
+    image: nginx:1.24.0
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    networks:
+       - emission
+    volumes:
+      - ./docker/ngnix.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8060:80"
+
+  
+networks:
+  emission:

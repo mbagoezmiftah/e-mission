@@ -1,0 +1,49 @@
+{
+  "name": "cordova-plugin-em-datacollection",
+  "version": "2.0.0",
+  "description": "The main tracking for the e-mission platform",
+  "license": "BSD-3-clause",
+  "cordova": {
+    "id": "cordova-plugin-em-datacollection",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-mission/e-mission-data-collection.git"
+  },
+  "keywords": [
+    "emission",
+    "connection",
+    "settings",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.6.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=7.0.0"
+    },
+    {
+      "name": "android-sdk",
+      "version": ">=26"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    }
+  ],
+  "author": "K. Shankari",
+  "bugs": {
+    "url": "https://github.com/e-mission/e-mission-data-collection/issues"
+  },
+  "homepage": "https://e-mission/e-mission-data-collection"
+}
+

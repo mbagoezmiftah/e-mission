@@ -1,0 +1,2552 @@
+{
+    "data": [
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456175599.001847,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 13,
+                    "minute": 13,
+                    "second": 19,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T13:13:19.001847-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0841170289759,
+                        37.40358810875323
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216c6fdd481f355337d9"
+                },
+                "start_ts": 1456175166.142961,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 13,
+                    "minute": 6,
+                    "second": 6,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T13:06:06.142961-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0835394136759,
+                        37.39510093925015
+                    ]
+                },
+                "duration": 432.85888600349426,
+                "distance": 1268.342921065312,
+                "start_place": {
+                    "$oid": "5f3c216e6fdd481f35533840"
+                },
+                "end_place": {
+                    "$oid": "5f3c216e6fdd481f35533841"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0835394136759,
+                            37.39510093925015
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337d8"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337d8"
+                            }
+                        ],
+                        "starting_trip": {
+                            "$oid": "5f3c216d6fdd481f355337ef"
+                        },
+                        "exit_ts": 1456175166.142961,
+                        "exit_fmt_time": "2016-02-22T13:06:06.142961-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 13,
+                            "minute": 6,
+                            "second": 6,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533840"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0841170289759,
+                            37.40358810875323
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456175599.001847,
+                        "enter_local_dt": {
+                            "hour": 13,
+                            "month": 2,
+                            "second": 19,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 13
+                        },
+                        "enter_fmt_time": "2016-02-22T13:13:19.001847-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337da"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337da"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f355337ef"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216d6fdd481f355337fe"
+                        },
+                        "exit_ts": 1456183990.8151445,
+                        "exit_fmt_time": "2016-02-22T15:33:10.815145-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 15,
+                            "minute": 33,
+                            "second": 10,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 8391.813297510147,
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533841"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                -122.0848461707328,
+                                37.40303050264474
+                            ],
+                            [
+                                -122.084664199615,
+                                37.40345739297327
+                            ]
+                        ]
+                    },
+                    "properties": {
+                        "trip_id": {
+                            "$oid": "5f3c216d6fdd481f355337ef"
+                        },
+                        "source": "SmoothedHighConfidenceMotion",
+                        "ending_section": {
+                            "$oid": "5f3c216d6fdd481f355337f1"
+                        },
+                        "starting_section": {
+                            "$oid": "5f3c216d6fdd481f355337f9"
+                        },
+                        "enter_ts": 1456175328.000088,
+                        "enter_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 13,
+                            "minute": 8,
+                            "second": 48,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "enter_fmt_time": "2016-02-22T13:08:48.000088-08:00",
+                        "enter_loc": {
+                            "type": "Point",
+                            "coordinates": [
+                                -122.0848461707328,
+                                37.40303050264474
+                            ]
+                        },
+                        "exit_ts": 1456175553.000089,
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 13,
+                            "minute": 12,
+                            "second": 33,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "exit_fmt_time": "2016-02-22T13:12:33.000089-08:00",
+                        "exit_loc": {
+                            "type": "Point",
+                            "coordinates": [
+                                -122.084664199615,
+                                37.40345739297327
+                            ]
+                        },
+                        "duration": 225.00000095367432,
+                        "distance": 50.115651665926656,
+                        "feature_type": "stop"
+                    },
+                    "id": "5f3c216d6fdd481f355337fd"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0835394136759,
+                                        37.39510093925015
+                                    ],
+                                    [
+                                        -122.083071178625,
+                                        37.395555525443235
+                                    ],
+                                    [
+                                        -122.08290984157394,
+                                        37.39581300943351
+                                    ],
+                                    [
+                                        -122.08100602649701,
+                                        37.399616950242816
+                                    ],
+                                    [
+                                        -122.08431690111462,
+                                        37.400331102882056
+                                    ],
+                                    [
+                                        -122.08502561290972,
+                                        37.40187058135266
+                                    ],
+                                    [
+                                        -122.0848461707328,
+                                        37.40303050264474
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456175166.142961,
+                                    1456175196.142961,
+                                    1456175226.142961,
+                                    1456175256.142961,
+                                    1456175286.142961,
+                                    1456175316.142961,
+                                    1456175328.000088
+                                ],
+                                "timestamps": [
+                                    1456175166143,
+                                    1456175196143,
+                                    1456175226143,
+                                    1456175256143,
+                                    1456175286143,
+                                    1456175316143,
+                                    1456175328000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c216d6fdd481f355337ef"
+                                },
+                                "start_ts": 1456175166.142961,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 13,
+                                    "minute": 6,
+                                    "second": 6,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T13:06:06.142961-08:00",
+                                "end_ts": 1456175328.000088,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 13,
+                                    "minute": 8,
+                                    "second": 48,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T13:08:48.000088-08:00",
+                                "duration": 161.85712695121765,
+                                "speeds": [
+                                    0.0,
+                                    2.177167762605943,
+                                    1.0660744272690708,
+                                    15.172897576752298,
+                                    10.101826852156927,
+                                    6.075678816743172,
+                                    10.959457096341461
+                                ],
+                                "distances": [
+                                    0.0,
+                                    65.3150328781783,
+                                    31.98223281807212,
+                                    455.18692730256896,
+                                    303.0548055647078,
+                                    182.27036450229514,
+                                    129.9476741077439
+                                ],
+                                "distance": 1167.7570371735662,
+                                "sensed_mode": "MotionTypes.IN_VEHICLE",
+                                "end_stop": {
+                                    "$oid": "5f3c216d6fdd481f355337fd"
+                                },
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c216d6fdd481f355337f1"
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.084664199615,
+                                        37.40345739297327
+                                    ],
+                                    [
+                                        -122.08430736283633,
+                                        37.403542639136916
+                                    ],
+                                    [
+                                        -122.0841170289759,
+                                        37.40358810875323
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456175553.000089,
+                                    1456175583.000089,
+                                    1456175599.001847
+                                ],
+                                "timestamps": [
+                                    1456175553000,
+                                    1456175583000,
+                                    1456175599002
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c216d6fdd481f355337ef"
+                                },
+                                "start_ts": 1456175553.000089,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 13,
+                                    "minute": 12,
+                                    "second": 33,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T13:12:33.000089-08:00",
+                                "end_ts": 1456175599.001847,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 13,
+                                    "minute": 13,
+                                    "second": 19,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T13:13:19.001847-08:00",
+                                "duration": 46.001758098602295,
+                                "speeds": [
+                                    0.0,
+                                    1.097137334649257,
+                                    1.097136457016867
+                                ],
+                                "distances": [
+                                    0.0,
+                                    32.91412003947771,
+                                    17.55611218634148
+                                ],
+                                "distance": 50.47023222581919,
+                                "sensed_mode": "MotionTypes.WALKING",
+                                "start_stop": {
+                                    "$oid": "5f3c216d6fdd481f355337fd"
+                                },
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c216d6fdd481f355337f9"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c216d6fdd481f355337ef"
+        },
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456184232.000136,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 15,
+                    "minute": 37,
+                    "second": 12,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T15:37:12.000136-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0863188711201,
+                        37.39099945410843
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216c6fdd481f355337db"
+                },
+                "start_ts": 1456183990.8151445,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 15,
+                    "minute": 33,
+                    "second": 10,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T15:33:10.815145-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0841170289759,
+                        37.40358810875323
+                    ]
+                },
+                "duration": 241.1849913597107,
+                "distance": 1484.3543525903804,
+                "start_place": {
+                    "$oid": "5f3c216e6fdd481f35533841"
+                },
+                "end_place": {
+                    "$oid": "5f3c216e6fdd481f35533842"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0841170289759,
+                            37.40358810875323
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456175599.001847,
+                        "enter_local_dt": {
+                            "hour": 13,
+                            "month": 2,
+                            "second": 19,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 13
+                        },
+                        "enter_fmt_time": "2016-02-22T13:13:19.001847-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337da"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337da"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f355337ef"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216d6fdd481f355337fe"
+                        },
+                        "exit_ts": 1456183990.8151445,
+                        "exit_fmt_time": "2016-02-22T15:33:10.815145-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 15,
+                            "minute": 33,
+                            "second": 10,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 8391.813297510147,
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533841"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0863188711201,
+                            37.39099945410843
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456184232.000136,
+                        "enter_local_dt": {
+                            "hour": 15,
+                            "month": 2,
+                            "second": 12,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 37
+                        },
+                        "enter_fmt_time": "2016-02-22T15:37:12.000136-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337dc"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337dc"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f355337fe"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216d6fdd481f3553380b"
+                        },
+                        "exit_ts": 1456184979.4126601,
+                        "exit_fmt_time": "2016-02-22T15:49:39.412660-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 15,
+                            "minute": 49,
+                            "second": 39,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 747.4125242233276,
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533842"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0841170289759,
+                                        37.40358810875323
+                                    ],
+                                    [
+                                        -122.08452828616919,
+                                        37.40201045425199
+                                    ],
+                                    [
+                                        -122.08413060710873,
+                                        37.4005046837187
+                                    ],
+                                    [
+                                        -122.08373292804826,
+                                        37.39899891318541
+                                    ],
+                                    [
+                                        -122.0833352489878,
+                                        37.39749314265212
+                                    ],
+                                    [
+                                        -122.08311036690847,
+                                        37.39599521378282
+                                    ],
+                                    [
+                                        -122.08347392870755,
+                                        37.39557251257455
+                                    ],
+                                    [
+                                        -122.08433586220931,
+                                        37.39410305279202
+                                    ],
+                                    [
+                                        -122.08627855942905,
+                                        37.39106879702789
+                                    ],
+                                    [
+                                        -122.0863188711201,
+                                        37.39099945410843
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456183990.8151445,
+                                    1456184020.8151445,
+                                    1456184050.8151445,
+                                    1456184080.8151445,
+                                    1456184110.8151445,
+                                    1456184140.8151445,
+                                    1456184170.8151445,
+                                    1456184200.8151445,
+                                    1456184230.8151445,
+                                    1456184232.000136
+                                ],
+                                "timestamps": [
+                                    1456183990815,
+                                    1456184020815,
+                                    1456184050815,
+                                    1456184080815,
+                                    1456184110815,
+                                    1456184140815,
+                                    1456184170815,
+                                    1456184200815,
+                                    1456184230815,
+                                    1456184232000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c216d6fdd481f355337fe"
+                                },
+                                "start_ts": 1456183990.8151445,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 15,
+                                    "minute": 33,
+                                    "second": 10,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T15:33:10.815145-08:00",
+                                "end_ts": 1456184232.000136,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 15,
+                                    "minute": 37,
+                                    "second": 12,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T15:37:12.000136-08:00",
+                                "duration": 241.1849913597107,
+                                "speeds": [
+                                    0.0,
+                                    5.971631537590483,
+                                    5.702646501865293,
+                                    5.702651333120758,
+                                    5.702656164294543,
+                                    5.591419996802397,
+                                    1.8975747233537228,
+                                    6.008911998469878,
+                                    12.617875858518312,
+                                    7.167401770754237
+                                ],
+                                "distances": [
+                                    0.0,
+                                    179.14894612771448,
+                                    171.0793950559588,
+                                    171.07953999362275,
+                                    171.0796849288363,
+                                    167.7425999040719,
+                                    56.92724170061168,
+                                    180.26735995409632,
+                                    378.53627575554935,
+                                    8.493309169918895
+                                ],
+                                "distance": 1484.3543525903804,
+                                "sensed_mode": "MotionTypes.IN_VEHICLE",
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c216d6fdd481f35533800"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c216d6fdd481f355337fe"
+        },
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456185840.997765,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 16,
+                    "minute": 4,
+                    "second": 0,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T16:04:00.997765-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.1080831532572,
+                        37.41654267538098
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216c6fdd481f355337dd"
+                },
+                "start_ts": 1456184979.4126601,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 15,
+                    "minute": 49,
+                    "second": 39,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T15:49:39.412660-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0863188711201,
+                        37.39099945410843
+                    ]
+                },
+                "duration": 861.5851049423218,
+                "distance": 5076.176037247812,
+                "start_place": {
+                    "$oid": "5f3c216e6fdd481f35533842"
+                },
+                "end_place": {
+                    "$oid": "5f3c216e6fdd481f35533843"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0863188711201,
+                            37.39099945410843
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456184232.000136,
+                        "enter_local_dt": {
+                            "hour": 15,
+                            "month": 2,
+                            "second": 12,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 37
+                        },
+                        "enter_fmt_time": "2016-02-22T15:37:12.000136-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337dc"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337dc"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f355337fe"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216d6fdd481f3553380b"
+                        },
+                        "exit_ts": 1456184979.4126601,
+                        "exit_fmt_time": "2016-02-22T15:49:39.412660-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 15,
+                            "minute": 49,
+                            "second": 39,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 747.4125242233276,
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533842"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.1080831532572,
+                            37.41654267538098
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456185840.997765,
+                        "enter_local_dt": {
+                            "hour": 16,
+                            "month": 2,
+                            "second": 0,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 4
+                        },
+                        "enter_fmt_time": "2016-02-22T16:04:00.997765-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337de"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337de"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f3553380b"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216e6fdd481f3553382c"
+                        },
+                        "exit_ts": 1456188567.1974702,
+                        "exit_fmt_time": "2016-02-22T16:49:27.197470-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 16,
+                            "minute": 49,
+                            "second": 27,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 2726.1997051239014,
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533843"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0863188711201,
+                                        37.39099945410843
+                                    ],
+                                    [
+                                        -122.08736506718292,
+                                        37.39151857265484
+                                    ],
+                                    [
+                                        -122.0863250912198,
+                                        37.39315516544663
+                                    ],
+                                    [
+                                        -122.08576064805216,
+                                        37.393274565211044
+                                    ],
+                                    [
+                                        -122.08546054450274,
+                                        37.393185157449395
+                                    ],
+                                    [
+                                        -122.08532043175691,
+                                        37.39314551033707
+                                    ],
+                                    [
+                                        -122.08518031901109,
+                                        37.39310586322474
+                                    ],
+                                    [
+                                        -122.08504020626525,
+                                        37.39306621611241
+                                    ],
+                                    [
+                                        -122.08364852694494,
+                                        37.39485353453987
+                                    ],
+                                    [
+                                        -122.08326827764704,
+                                        37.39535611992507
+                                    ],
+                                    [
+                                        -122.0831810343022,
+                                        37.39552252625567
+                                    ],
+                                    [
+                                        -122.0829061492163,
+                                        37.39588600151963
+                                    ],
+                                    [
+                                        -122.0809697622382,
+                                        37.397601106394525
+                                    ],
+                                    [
+                                        -122.0830988970515,
+                                        37.39779707159226
+                                    ],
+                                    [
+                                        -122.08938715062507,
+                                        37.400191804710886
+                                    ],
+                                    [
+                                        -122.09050891077824,
+                                        37.40068045405292
+                                    ],
+                                    [
+                                        -122.0947935376405,
+                                        37.402306201761526
+                                    ],
+                                    [
+                                        -122.09648669949539,
+                                        37.40300330623888
+                                    ],
+                                    [
+                                        -122.09668933200454,
+                                        37.4031113454783
+                                    ],
+                                    [
+                                        -122.09750920927537,
+                                        37.40349806463578
+                                    ],
+                                    [
+                                        -122.10202625190556,
+                                        37.40511521637951
+                                    ],
+                                    [
+                                        -122.10490666757934,
+                                        37.40640797772252
+                                    ],
+                                    [
+                                        -122.106737102061,
+                                        37.4084703204173
+                                    ],
+                                    [
+                                        -122.10602829023107,
+                                        37.411862115722066
+                                    ],
+                                    [
+                                        -122.10376451937435,
+                                        37.4153684221674
+                                    ],
+                                    [
+                                        -122.1036210295275,
+                                        37.415735002104505
+                                    ],
+                                    [
+                                        -122.10353083475162,
+                                        37.415949565088226
+                                    ],
+                                    [
+                                        -122.10566132243316,
+                                        37.41739490899807
+                                    ],
+                                    [
+                                        -122.10706338101235,
+                                        37.41633898456853
+                                    ],
+                                    [
+                                        -122.1080831532572,
+                                        37.41654267538098
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456184979.4126601,
+                                    1456185009.4126601,
+                                    1456185039.4126601,
+                                    1456185069.4126601,
+                                    1456185099.4126601,
+                                    1456185129.4126601,
+                                    1456185159.4126601,
+                                    1456185189.4126601,
+                                    1456185219.4126601,
+                                    1456185249.4126601,
+                                    1456185279.4126601,
+                                    1456185309.4126601,
+                                    1456185339.4126601,
+                                    1456185369.4126601,
+                                    1456185399.4126601,
+                                    1456185429.4126601,
+                                    1456185459.4126601,
+                                    1456185489.4126601,
+                                    1456185519.4126601,
+                                    1456185549.4126601,
+                                    1456185579.4126601,
+                                    1456185609.4126601,
+                                    1456185639.4126601,
+                                    1456185669.4126601,
+                                    1456185699.4126601,
+                                    1456185729.4126601,
+                                    1456185759.4126601,
+                                    1456185789.4126601,
+                                    1456185819.4126601,
+                                    1456185840.997765
+                                ],
+                                "timestamps": [
+                                    1456184979413,
+                                    1456185009413,
+                                    1456185039413,
+                                    1456185069413,
+                                    1456185099413,
+                                    1456185129413,
+                                    1456185159413,
+                                    1456185189413,
+                                    1456185219413,
+                                    1456185249413,
+                                    1456185279413,
+                                    1456185309413,
+                                    1456185339413,
+                                    1456185369413,
+                                    1456185399413,
+                                    1456185429413,
+                                    1456185459413,
+                                    1456185489413,
+                                    1456185519413,
+                                    1456185549413,
+                                    1456185579413,
+                                    1456185609413,
+                                    1456185639413,
+                                    1456185669413,
+                                    1456185699413,
+                                    1456185729413,
+                                    1456185759413,
+                                    1456185789413,
+                                    1456185819413,
+                                    1456185840998
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c216d6fdd481f3553380b"
+                                },
+                                "start_ts": 1456184979.4126601,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 15,
+                                    "minute": 49,
+                                    "second": 39,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T15:49:39.412660-08:00",
+                                "end_ts": 1456185840.997765,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 16,
+                                    "minute": 4,
+                                    "second": 0,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T16:04:00.997765-08:00",
+                                "duration": 861.5851049423218,
+                                "speeds": [
+                                    0.0,
+                                    3.6323576957491195,
+                                    6.795270585258313,
+                                    1.72005840671627,
+                                    0.9438241164385541,
+                                    0.43798723855823485,
+                                    0.43798744414978236,
+                                    0.4379876497717419,
+                                    7.789811176915316,
+                                    2.1734544516226433,
+                                    0.6681486503726751,
+                                    1.5716877628862573,
+                                    8.539547718570851,
+                                    6.311356217760427,
+                                    20.533542361932863,
+                                    3.7669836664133958,
+                                    13.981037304552064,
+                                    5.615125541395701,
+                                    0.71855466809909,
+                                    2.8074982588129838,
+                                    14.58795135063375,
+                                    9.740749496945808,
+                                    9.352804345711139,
+                                    12.74370199696333,
+                                    14.605271900300881,
+                                    1.4228764524523856,
+                                    0.8384316974729284,
+                                    8.248325977474249,
+                                    5.687998952520136,
+                                    4.30232073934483
+                                ],
+                                "distances": [
+                                    0.0,
+                                    108.97073087247358,
+                                    203.8581175577494,
+                                    51.601752201488104,
+                                    28.314723493156624,
+                                    13.139617156747045,
+                                    13.13962332449347,
+                                    13.139629493152258,
+                                    233.69433530745948,
+                                    65.20363354867929,
+                                    20.044459511180253,
+                                    47.15063288658772,
+                                    256.18643155712556,
+                                    189.3406865328128,
+                                    616.0062708579859,
+                                    113.00950999240187,
+                                    419.4311191365619,
+                                    168.45376624187102,
+                                    21.5566400429727,
+                                    84.22494776438951,
+                                    437.6385405190125,
+                                    292.22248490837427,
+                                    280.58413037133414,
+                                    382.3110599088999,
+                                    438.1581570090264,
+                                    42.68629357357157,
+                                    25.152950924187852,
+                                    247.44977932422745,
+                                    170.6399685756041,
+                                    92.86604465428556
+                                ],
+                                "distance": 5076.176037247812,
+                                "sensed_mode": "MotionTypes.IN_VEHICLE",
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c216e6fdd481f3553380d"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c216d6fdd481f3553380b"
+        },
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456189018.000047,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 16,
+                    "minute": 56,
+                    "second": 58,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T16:56:58.000047-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0861964953338,
+                        37.39118427507336
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216c6fdd481f355337df"
+                },
+                "start_ts": 1456188567.1974702,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 16,
+                    "minute": 49,
+                    "second": 27,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T16:49:27.197470-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.1080831532572,
+                        37.41654267538098
+                    ]
+                },
+                "duration": 450.8025767803192,
+                "distance": 4864.018162039151,
+                "start_place": {
+                    "$oid": "5f3c216e6fdd481f35533843"
+                },
+                "end_place": {
+                    "$oid": "5f3c216e6fdd481f35533844"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.1080831532572,
+                            37.41654267538098
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456185840.997765,
+                        "enter_local_dt": {
+                            "hour": 16,
+                            "month": 2,
+                            "second": 0,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 4
+                        },
+                        "enter_fmt_time": "2016-02-22T16:04:00.997765-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337de"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337de"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216d6fdd481f3553380b"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c216e6fdd481f3553382c"
+                        },
+                        "exit_ts": 1456188567.1974702,
+                        "exit_fmt_time": "2016-02-22T16:49:27.197470-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 16,
+                            "minute": 49,
+                            "second": 27,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 2726.1997051239014,
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533843"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0861964953338,
+                            37.39118427507336
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456189018.000047,
+                        "enter_local_dt": {
+                            "hour": 16,
+                            "month": 2,
+                            "second": 58,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 56
+                        },
+                        "enter_fmt_time": "2016-02-22T16:56:58.000047-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337e0"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337e0"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216e6fdd481f3553382c"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c21706fdd481f35533852"
+                        },
+                        "exit_ts": 1456198616.2245762,
+                        "exit_fmt_time": "2016-02-22T19:36:56.224576-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 19,
+                            "minute": 36,
+                            "second": 56,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 9598.224529266357,
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533844"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.1080831532572,
+                                        37.41654267538098
+                                    ],
+                                    [
+                                        -122.10668650013243,
+                                        37.41644824521694
+                                    ],
+                                    [
+                                        -122.10573246308519,
+                                        37.417310472771454
+                                    ],
+                                    [
+                                        -122.10432627446654,
+                                        37.41670792681891
+                                    ],
+                                    [
+                                        -122.10354273020113,
+                                        37.41629471273817
+                                    ],
+                                    [
+                                        -122.10029216797535,
+                                        37.41421852827844
+                                    ],
+                                    [
+                                        -122.09629324996104,
+                                        37.41170313931669
+                                    ],
+                                    [
+                                        -122.09106607627604,
+                                        37.41103668377151
+                                    ],
+                                    [
+                                        -122.0860654439005,
+                                        37.409528711541306
+                                    ],
+                                    [
+                                        -122.08162300550093,
+                                        37.407831948661396
+                                    ],
+                                    [
+                                        -122.07818072482219,
+                                        37.40600275205473
+                                    ],
+                                    [
+                                        -122.078251352204,
+                                        37.40293625397358
+                                    ],
+                                    [
+                                        -122.08015935870925,
+                                        37.40073570667502
+                                    ],
+                                    [
+                                        -122.08173802525316,
+                                        37.39774752033557
+                                    ],
+                                    [
+                                        -122.08410233567352,
+                                        37.39454171982598
+                                    ],
+                                    [
+                                        -122.08615029346772,
+                                        37.391257647780584
+                                    ],
+                                    [
+                                        -122.0861964953338,
+                                        37.39118427507336
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456188567.1974702,
+                                    1456188597.1974702,
+                                    1456188627.1974702,
+                                    1456188657.1974702,
+                                    1456188687.1974702,
+                                    1456188717.1974702,
+                                    1456188747.1974702,
+                                    1456188777.1974702,
+                                    1456188807.1974702,
+                                    1456188837.1974702,
+                                    1456188867.1974702,
+                                    1456188897.1974702,
+                                    1456188927.1974702,
+                                    1456188957.1974702,
+                                    1456188987.1974702,
+                                    1456189017.1974702,
+                                    1456189018.000047
+                                ],
+                                "timestamps": [
+                                    1456188567197,
+                                    1456188597197,
+                                    1456188627197,
+                                    1456188657197,
+                                    1456188687197,
+                                    1456188717197,
+                                    1456188747197,
+                                    1456188777197,
+                                    1456188807197,
+                                    1456188837197,
+                                    1456188867197,
+                                    1456188897197,
+                                    1456188927197,
+                                    1456188957197,
+                                    1456188987197,
+                                    1456189017197,
+                                    1456189018000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c216e6fdd481f3553382c"
+                                },
+                                "start_ts": 1456188567.1974702,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 16,
+                                    "minute": 49,
+                                    "second": 27,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T16:49:27.197470-08:00",
+                                "end_ts": 1456189018.000047,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 16,
+                                    "minute": 56,
+                                    "second": 58,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T16:56:58.000047-08:00",
+                                "duration": 450.8025767803192,
+                                "speeds": [
+                                    0.0,
+                                    4.126404607090824,
+                                    4.254554633722302,
+                                    4.703602873613781,
+                                    2.768806923780915,
+                                    12.279682738088708,
+                                    15.017373335949673,
+                                    15.586051527560594,
+                                    15.747601358385591,
+                                    14.512693544700438,
+                                    12.193535594476677,
+                                    11.36786978433987,
+                                    9.903903397298745,
+                                    12.011623373676036,
+                                    13.771678967949983,
+                                    13.584464837351089,
+                                    11.366809161818253
+                                ],
+                                "distances": [
+                                    0.0,
+                                    123.79213821272472,
+                                    127.63663901166905,
+                                    141.10808620841345,
+                                    83.06420771342745,
+                                    368.39048214266126,
+                                    450.52120007849015,
+                                    467.58154582681783,
+                                    472.4280407515677,
+                                    435.38080634101317,
+                                    365.8060678343003,
+                                    341.0360935301961,
+                                    297.11710191896236,
+                                    360.3487012102811,
+                                    413.1503690384995,
+                                    407.5339451205327,
+                                    9.122737099595035
+                                ],
+                                "distance": 4864.018162039151,
+                                "sensed_mode": "MotionTypes.IN_VEHICLE",
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c216e6fdd481f3553382e"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c216e6fdd481f3553382c"
+        },
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456199315.000033,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 19,
+                    "minute": 48,
+                    "second": 35,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T19:48:35.000033-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0797878598069,
+                        37.39235883116479
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216f6fdd481f35533847"
+                },
+                "start_ts": 1456198616.2245762,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 19,
+                    "minute": 36,
+                    "second": 56,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T19:36:56.224576-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0861964953338,
+                        37.39118427507336
+                    ]
+                },
+                "duration": 698.7754566669464,
+                "distance": 694.0299448297055,
+                "start_place": {
+                    "$oid": "5f3c216e6fdd481f35533844"
+                },
+                "end_place": {
+                    "$oid": "5f3c21706fdd481f35533891"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0861964953338,
+                            37.39118427507336
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456189018.000047,
+                        "enter_local_dt": {
+                            "hour": 16,
+                            "month": 2,
+                            "second": 58,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 56
+                        },
+                        "enter_fmt_time": "2016-02-22T16:56:58.000047-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216c6fdd481f355337e0"
+                            },
+                            {
+                                "$oid": "5f3c216c6fdd481f355337e0"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c216e6fdd481f3553382c"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c21706fdd481f35533852"
+                        },
+                        "exit_ts": 1456198616.2245762,
+                        "exit_fmt_time": "2016-02-22T19:36:56.224576-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 19,
+                            "minute": 36,
+                            "second": 56,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 9598.224529266357,
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c216e6fdd481f35533844"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0797878598069,
+                            37.39235883116479
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456199315.000033,
+                        "enter_local_dt": {
+                            "hour": 19,
+                            "month": 2,
+                            "second": 35,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 48
+                        },
+                        "enter_fmt_time": "2016-02-22T19:48:35.000033-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216f6fdd481f35533848"
+                            },
+                            {
+                                "$oid": "5f3c216f6fdd481f35533848"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c21706fdd481f35533852"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c21706fdd481f3553386e"
+                        },
+                        "exit_ts": 1456199884.7253003,
+                        "exit_fmt_time": "2016-02-22T19:58:04.725300-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 19,
+                            "minute": 58,
+                            "second": 4,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 569.7252674102783,
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c21706fdd481f35533891"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0861964953338,
+                                        37.39118427507336
+                                    ],
+                                    [
+                                        -122.08582208316955,
+                                        37.3911311295419
+                                    ],
+                                    [
+                                        -122.08544767100528,
+                                        37.39107798401044
+                                    ],
+                                    [
+                                        -122.08507325884104,
+                                        37.39102483847898
+                                    ],
+                                    [
+                                        -122.08469884667679,
+                                        37.39097169294752
+                                    ],
+                                    [
+                                        -122.08432443451252,
+                                        37.390918547416064
+                                    ],
+                                    [
+                                        -122.08395002234828,
+                                        37.390865401884604
+                                    ],
+                                    [
+                                        -122.08357561018403,
+                                        37.39081225635314
+                                    ],
+                                    [
+                                        -122.08320119801976,
+                                        37.39075911082168
+                                    ],
+                                    [
+                                        -122.08282678585552,
+                                        37.39070596529022
+                                    ],
+                                    [
+                                        -122.08272910421324,
+                                        37.39059310549683
+                                    ],
+                                    [
+                                        -122.08249733150849,
+                                        37.39048525398395
+                                    ],
+                                    [
+                                        -122.08228188037482,
+                                        37.3905014086041
+                                    ],
+                                    [
+                                        -122.08210928701735,
+                                        37.390904063288616
+                                    ],
+                                    [
+                                        -122.08189346915591,
+                                        37.39127380138944
+                                    ],
+                                    [
+                                        -122.08164693187351,
+                                        37.391494892307115
+                                    ],
+                                    [
+                                        -122.08141412271318,
+                                        37.391583511394884
+                                    ],
+                                    [
+                                        -122.0811929694218,
+                                        37.39155965520894
+                                    ],
+                                    [
+                                        -122.08097181613043,
+                                        37.39153579902298
+                                    ],
+                                    [
+                                        -122.0806020367041,
+                                        37.39159917656347
+                                    ],
+                                    [
+                                        -122.08031152408861,
+                                        37.39184551947759
+                                    ],
+                                    [
+                                        -122.08013909426636,
+                                        37.39211726311138
+                                    ],
+                                    [
+                                        -122.07998588505053,
+                                        37.39222263560839
+                                    ],
+                                    [
+                                        -122.07983267583471,
+                                        37.39232800810541
+                                    ],
+                                    [
+                                        -122.0797878598069,
+                                        37.39235883116479
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456198616.2245762,
+                                    1456198646.2245762,
+                                    1456198676.2245762,
+                                    1456198706.2245762,
+                                    1456198736.2245762,
+                                    1456198766.2245762,
+                                    1456198796.2245762,
+                                    1456198826.2245762,
+                                    1456198856.2245762,
+                                    1456198886.2245762,
+                                    1456198916.2245762,
+                                    1456198946.2245762,
+                                    1456198976.2245762,
+                                    1456199006.2245762,
+                                    1456199036.2245762,
+                                    1456199066.2245762,
+                                    1456199096.2245762,
+                                    1456199126.2245762,
+                                    1456199156.2245762,
+                                    1456199186.2245762,
+                                    1456199216.2245762,
+                                    1456199246.2245762,
+                                    1456199276.2245762,
+                                    1456199306.2245762,
+                                    1456199315.000033
+                                ],
+                                "timestamps": [
+                                    1456198616225,
+                                    1456198646225,
+                                    1456198676225,
+                                    1456198706225,
+                                    1456198736225,
+                                    1456198766225,
+                                    1456198796225,
+                                    1456198826225,
+                                    1456198856225,
+                                    1456198886225,
+                                    1456198916225,
+                                    1456198946225,
+                                    1456198976225,
+                                    1456199006225,
+                                    1456199036225,
+                                    1456199066225,
+                                    1456199096225,
+                                    1456199126225,
+                                    1456199156225,
+                                    1456199186225,
+                                    1456199216225,
+                                    1456199246225,
+                                    1456199276225,
+                                    1456199306225,
+                                    1456199315000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c21706fdd481f35533852"
+                                },
+                                "start_ts": 1456198616.2245762,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 19,
+                                    "minute": 36,
+                                    "second": 56,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T19:36:56.224576-08:00",
+                                "end_ts": 1456199315.000033,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 19,
+                                    "minute": 48,
+                                    "second": 35,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T19:48:35.000033-08:00",
+                                "duration": 698.7754566669464,
+                                "speeds": [
+                                    0.0,
+                                    1.1200431160509188,
+                                    1.1200438855852632,
+                                    1.1200446550362981,
+                                    1.120045424527612,
+                                    1.1200461940545738,
+                                    1.1200469635074894,
+                                    1.1200477329960525,
+                                    1.1200485025248952,
+                                    1.1200492719704278,
+                                    0.5076758848827846,
+                                    0.7909879213286548,
+                                    0.6372945498833873,
+                                    1.5766117902599066,
+                                    1.5106329349456493,
+                                    1.0948189535623674,
+                                    0.7602067070421459,
+                                    0.6572334629220233,
+                                    0.6572336682983317,
+                                    1.1139859870137596,
+                                    1.251235036033192,
+                                    1.1279716109466191,
+                                    0.5967366925563444,
+                                    0.5967362130698662,
+                                    0.596735903155099
+                                ],
+                                "distances": [
+                                    0.0,
+                                    33.60129348152756,
+                                    33.601316567557895,
+                                    33.60133965108894,
+                                    33.60136273582836,
+                                    33.601385821637216,
+                                    33.60140890522468,
+                                    33.601431989881576,
+                                    33.601455075746856,
+                                    33.60147815911284,
+                                    15.23027654648354,
+                                    23.729637639859643,
+                                    19.11883649650162,
+                                    47.2983537077972,
+                                    45.31898804836948,
+                                    32.84456860687102,
+                                    22.806201211264376,
+                                    19.7170038876607,
+                                    19.717010048949952,
+                                    33.41957961041279,
+                                    37.53705108099576,
+                                    33.83914832839857,
+                                    17.902100776690332,
+                                    17.90208639209599,
+                                    5.236630059748701
+                                ],
+                                "distance": 694.0299448297055,
+                                "sensed_mode": "MotionTypes.WALKING",
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c21706fdd481f35533854"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c21706fdd481f35533852"
+        },
+        {
+            "type": "FeatureCollection",
+            "properties": {
+                "source": "DwellSegmentationDistFilter",
+                "end_ts": 1456200735.000095,
+                "end_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 20,
+                    "minute": 12,
+                    "second": 15,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "end_fmt_time": "2016-02-22T20:12:15.000095-08:00",
+                "end_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0863878541832,
+                        37.39094635475184
+                    ]
+                },
+                "raw_trip": {
+                    "$oid": "5f3c216f6fdd481f35533849"
+                },
+                "start_ts": 1456199884.7253003,
+                "start_local_dt": {
+                    "year": 2016,
+                    "month": 2,
+                    "day": 22,
+                    "hour": 19,
+                    "minute": 58,
+                    "second": 4,
+                    "weekday": 0,
+                    "timezone": "America/Los_Angeles"
+                },
+                "start_fmt_time": "2016-02-22T19:58:04.725300-08:00",
+                "start_loc": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.0797878598069,
+                        37.39235883116479
+                    ]
+                },
+                "duration": 850.2747945785522,
+                "distance": 907.7593098888017,
+                "start_place": {
+                    "$oid": "5f3c21706fdd481f35533891"
+                },
+                "end_place": {
+                    "$oid": "5f3c21706fdd481f35533892"
+                },
+                "feature_type": "trip"
+            },
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0797878598069,
+                            37.39235883116479
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456199315.000033,
+                        "enter_local_dt": {
+                            "hour": 19,
+                            "month": 2,
+                            "second": 35,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 48
+                        },
+                        "enter_fmt_time": "2016-02-22T19:48:35.000033-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216f6fdd481f35533848"
+                            },
+                            {
+                                "$oid": "5f3c216f6fdd481f35533848"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c21706fdd481f35533852"
+                        },
+                        "starting_trip": {
+                            "$oid": "5f3c21706fdd481f3553386e"
+                        },
+                        "exit_ts": 1456199884.7253003,
+                        "exit_fmt_time": "2016-02-22T19:58:04.725300-08:00",
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 19,
+                            "minute": 58,
+                            "second": 4,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "duration": 569.7252674102783,
+                        "feature_type": "start_place"
+                    },
+                    "id": "5f3c21706fdd481f35533891"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.0863878541832,
+                            37.39094635475184
+                        ]
+                    },
+                    "properties": {
+                        "source": "DwellSegmentationDistFilter",
+                        "enter_ts": 1456200735.000095,
+                        "enter_local_dt": {
+                            "hour": 20,
+                            "month": 2,
+                            "second": 15,
+                            "weekday": 0,
+                            "year": 2016,
+                            "timezone": "America/Los_Angeles",
+                            "day": 22,
+                            "minute": 12
+                        },
+                        "enter_fmt_time": "2016-02-22T20:12:15.000095-08:00",
+                        "raw_places": [
+                            {
+                                "$oid": "5f3c216f6fdd481f3553384a"
+                            }
+                        ],
+                        "ending_trip": {
+                            "$oid": "5f3c21706fdd481f3553386e"
+                        },
+                        "feature_type": "end_place"
+                    },
+                    "id": "5f3c21706fdd481f35533892"
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "LineString",
+                        "coordinates": [
+                            [
+                                -122.0861436893438,
+                                37.39011340312417
+                            ],
+                            [
+                                -122.0864747745191,
+                                37.39049980886038
+                            ]
+                        ]
+                    },
+                    "properties": {
+                        "trip_id": {
+                            "$oid": "5f3c21706fdd481f3553386e"
+                        },
+                        "source": "SmoothedHighConfidenceMotion",
+                        "ending_section": {
+                            "$oid": "5f3c21706fdd481f35533870"
+                        },
+                        "starting_section": {
+                            "$oid": "5f3c21706fdd481f3553388c"
+                        },
+                        "enter_ts": 1456200660.000035,
+                        "enter_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 20,
+                            "minute": 11,
+                            "second": 0,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "enter_fmt_time": "2016-02-22T20:11:00.000035-08:00",
+                        "enter_loc": {
+                            "type": "Point",
+                            "coordinates": [
+                                -122.0861436893438,
+                                37.39011340312417
+                            ]
+                        },
+                        "exit_ts": 1456200692.000036,
+                        "exit_local_dt": {
+                            "year": 2016,
+                            "month": 2,
+                            "day": 22,
+                            "hour": 20,
+                            "minute": 11,
+                            "second": 32,
+                            "weekday": 0,
+                            "timezone": "America/Los_Angeles"
+                        },
+                        "exit_fmt_time": "2016-02-22T20:11:32.000036-08:00",
+                        "exit_loc": {
+                            "type": "Point",
+                            "coordinates": [
+                                -122.0864747745191,
+                                37.39049980886038
+                            ]
+                        },
+                        "duration": 32.000000953674316,
+                        "distance": 51.97767952485015,
+                        "feature_type": "stop"
+                    },
+                    "id": "5f3c21706fdd481f35533890"
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0797878598069,
+                                        37.39235883116479
+                                    ],
+                                    [
+                                        -122.07996197825807,
+                                        37.39209296034315
+                                    ],
+                                    [
+                                        -122.08017308166535,
+                                        37.391837264326014
+                                    ],
+                                    [
+                                        -122.08042320159926,
+                                        37.39159376740628
+                                    ],
+                                    [
+                                        -122.08068399261677,
+                                        37.39137722308631
+                                    ],
+                                    [
+                                        -122.08094478363428,
+                                        37.39116067876634
+                                    ],
+                                    [
+                                        -122.08120557465178,
+                                        37.39094413444637
+                                    ],
+                                    [
+                                        -122.08146636566929,
+                                        37.39072759012641
+                                    ],
+                                    [
+                                        -122.0817271566868,
+                                        37.39051104580644
+                                    ],
+                                    [
+                                        -122.08198794770429,
+                                        37.39029450148647
+                                    ],
+                                    [
+                                        -122.0822487387218,
+                                        37.390077957166504
+                                    ],
+                                    [
+                                        -122.0825095297393,
+                                        37.389861412846535
+                                    ],
+                                    [
+                                        -122.08277032075681,
+                                        37.38964486852657
+                                    ],
+                                    [
+                                        -122.08303111177432,
+                                        37.3894283242066
+                                    ],
+                                    [
+                                        -122.08286202532007,
+                                        37.389722092547224
+                                    ],
+                                    [
+                                        -122.08311471284519,
+                                        37.38996237717869
+                                    ],
+                                    [
+                                        -122.08343103815068,
+                                        37.389864359960676
+                                    ],
+                                    [
+                                        -122.08371716813951,
+                                        37.389775943222524
+                                    ],
+                                    [
+                                        -122.08392278733288,
+                                        37.389747540689186
+                                    ],
+                                    [
+                                        -122.08412840652625,
+                                        37.38971913815585
+                                    ],
+                                    [
+                                        -122.08434931189463,
+                                        37.38962671237683
+                                    ],
+                                    [
+                                        -122.08458409341006,
+                                        37.38947616898686
+                                    ],
+                                    [
+                                        -122.08484132656794,
+                                        37.38951083531852
+                                    ],
+                                    [
+                                        -122.08511207816436,
+                                        37.38965701893632
+                                    ],
+                                    [
+                                        -122.08548472921291,
+                                        37.38985684469086
+                                    ],
+                                    [
+                                        -122.08584766374723,
+                                        37.39000900796506
+                                    ],
+                                    [
+                                        -122.0861436893438,
+                                        37.39011340312417
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456199884.7253003,
+                                    1456199914.7253003,
+                                    1456199944.7253003,
+                                    1456199974.7253003,
+                                    1456200004.7253003,
+                                    1456200034.7253003,
+                                    1456200064.7253003,
+                                    1456200094.7253003,
+                                    1456200124.7253003,
+                                    1456200154.7253003,
+                                    1456200184.7253003,
+                                    1456200214.7253003,
+                                    1456200244.7253003,
+                                    1456200274.7253003,
+                                    1456200304.7253003,
+                                    1456200334.7253003,
+                                    1456200364.7253003,
+                                    1456200394.7253003,
+                                    1456200424.7253003,
+                                    1456200454.7253003,
+                                    1456200484.7253003,
+                                    1456200514.7253003,
+                                    1456200544.7253003,
+                                    1456200574.7253003,
+                                    1456200604.7253003,
+                                    1456200634.7253003,
+                                    1456200660.000035
+                                ],
+                                "timestamps": [
+                                    1456199884725,
+                                    1456199914725,
+                                    1456199944725,
+                                    1456199974725,
+                                    1456200004725,
+                                    1456200034725,
+                                    1456200064725,
+                                    1456200094725,
+                                    1456200124725,
+                                    1456200154725,
+                                    1456200184725,
+                                    1456200214725,
+                                    1456200244725,
+                                    1456200274725,
+                                    1456200304725,
+                                    1456200334725,
+                                    1456200364725,
+                                    1456200394725,
+                                    1456200424725,
+                                    1456200454725,
+                                    1456200484725,
+                                    1456200514725,
+                                    1456200544725,
+                                    1456200574725,
+                                    1456200604725,
+                                    1456200634725,
+                                    1456200660000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c21706fdd481f3553386e"
+                                },
+                                "start_ts": 1456199884.7253003,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 19,
+                                    "minute": 58,
+                                    "second": 4,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T19:58:04.725300-08:00",
+                                "end_ts": 1456200660.000035,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 20,
+                                    "minute": 11,
+                                    "second": 0,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T20:11:00.000035-08:00",
+                                "duration": 775.2747347354889,
+                                "speeds": [
+                                    0.0,
+                                    1.1108633891134516,
+                                    1.133430907046371,
+                                    1.1649300962036997,
+                                    1.1108563765068675,
+                                    1.1108579102331144,
+                                    1.1108594439251578,
+                                    1.1108609776507656,
+                                    1.1108625113802268,
+                                    1.1108640450564562,
+                                    1.110865578785279,
+                                    1.110867112450965,
+                                    1.110868646169245,
+                                    1.1108701798533207,
+                                    1.1973076996000815,
+                                    1.1605755815154437,
+                                    0.9998806670593577,
+                                    0.9041081631148005,
+                                    0.6146106353851066,
+                                    0.6146108614075243,
+                                    0.7352322730530336,
+                                    0.8884810604142189,
+                                    0.7683480592847224,
+                                    0.9640157616410463,
+                                    1.323970263512423,
+                                    1.208481380967685,
+                                    1.1320919165406456
+                                ],
+                                "distances": [
+                                    0.0,
+                                    33.32590167340355,
+                                    34.00292721139113,
+                                    34.94790288611099,
+                                    33.32569129520603,
+                                    33.32573730699343,
+                                    33.325783317754734,
+                                    33.32582932952297,
+                                    33.32587534140681,
+                                    33.32592135169369,
+                                    33.32596736355837,
+                                    33.32601337352895,
+                                    33.32605938507735,
+                                    33.32610539559962,
+                                    35.91923098800245,
+                                    34.81726744546331,
+                                    29.99642001178073,
+                                    27.123244893444014,
+                                    18.438319061553198,
+                                    18.43832584222573,
+                                    22.056968191591007,
+                                    26.65443181242657,
+                                    23.05044177854167,
+                                    28.920472849231388,
+                                    39.719107905372695,
+                                    36.25444142903055,
+                                    28.613322886756045
+                                ],
+                                "distance": 805.5377103266668,
+                                "sensed_mode": "MotionTypes.BICYCLING",
+                                "end_stop": {
+                                    "$oid": "5f3c21706fdd481f35533890"
+                                },
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c21706fdd481f35533870"
+                        }
+                    ]
+                },
+                {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "type": "Feature",
+                            "geometry": {
+                                "type": "LineString",
+                                "coordinates": [
+                                    [
+                                        -122.0864747745191,
+                                        37.39049980886038
+                                    ],
+                                    [
+                                        -122.08641413250734,
+                                        37.39081135207892
+                                    ],
+                                    [
+                                        -122.0863878541832,
+                                        37.39094635475184
+                                    ]
+                                ]
+                            },
+                            "properties": {
+                                "times": [
+                                    1456200692.000036,
+                                    1456200722.000036,
+                                    1456200735.000095
+                                ],
+                                "timestamps": [
+                                    1456200692000,
+                                    1456200722000,
+                                    1456200735000
+                                ],
+                                "source": "SmoothedHighConfidenceMotion",
+                                "trip_id": {
+                                    "$oid": "5f3c21706fdd481f3553386e"
+                                },
+                                "start_ts": 1456200692.000036,
+                                "start_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 20,
+                                    "minute": 11,
+                                    "second": 32,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "start_fmt_time": "2016-02-22T20:11:32.000036-08:00",
+                                "end_ts": 1456200735.000095,
+                                "end_local_dt": {
+                                    "year": 2016,
+                                    "month": 2,
+                                    "day": 22,
+                                    "hour": 20,
+                                    "minute": 12,
+                                    "second": 15,
+                                    "weekday": 0,
+                                    "timezone": "America/Los_Angeles"
+                                },
+                                "end_fmt_time": "2016-02-22T20:12:15.000095-08:00",
+                                "duration": 43.00005888938904,
+                                "speeds": [
+                                    0.0,
+                                    1.1684616810202273,
+                                    1.168461599745242
+                                ],
+                                "distances": [
+                                    0.0,
+                                    35.05385043060682,
+                                    15.19006960667787
+                                ],
+                                "distance": 50.243920037284695,
+                                "sensed_mode": "MotionTypes.WALKING",
+                                "start_stop": {
+                                    "$oid": "5f3c21706fdd481f35533890"
+                                },
+                                "feature_type": "section"
+                            },
+                            "id": "5f3c21706fdd481f3553388c"
+                        }
+                    ]
+                }
+            ],
+            "id": "5f3c21706fdd481f3553386e"
+        }
+    ],
+    "metadata": {
+        "key": "diary/trips-2016-02-22",
+        "type": "document",
+        "write_ts": 1597776241
+    }
+}

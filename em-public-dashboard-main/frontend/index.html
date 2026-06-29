@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="
+          base-uri 'self';
+          default-src 'self' 'unsafe-inline' data:
+            https://stackpath.bootstrapcdn.com
+            https://cdn.jsdelivr.net
+            https://raw.githubusercontent.com
+            https://code.jquery.com
+            https://stackpath.bootstrapcdn.com
+            https://*.sharethis.com
+            https://www.googletagmanager.com
+            https://*.fontawesome.com
+            https://fonts.googleapis.com
+            https://dap.digitalgov.gov
+            https://fonts.gstatic.com;">
+        
+		<title>Application Title | NLR</title>
+
+		<!-- == APPLICATION HEAD == -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KG7PVKB');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Search engine code -->
+		<!--#config timefmt="%Y-%m-%d@%H:%M:%S %Z" -->
+		<meta http-equiv="last-modified" content="<!--#echo var='LAST_MODIFIED'-->">
+        
+        <!-- ShareThis -->
+		<script src="https://platform-api.sharethis.com/js/sharethis.js#property=64bee650c73e910012491844&product=inline-share-buttons&amp;source=platform" async="async"></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- iOS icons -->
+		<link rel="apple-touch-icon" href="client/img/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="72x72"   href="client/img/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="client/img/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="client/img/touch-icon-ipad-retina.png">
+
+		<!-- GLOBAL styles -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="client/css/nrel.complete.css" rel="stylesheet" type="text/css" >
+
+  <!-- NREL Application styles -->
+  <link href="client/css/nrel.application.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="client/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="client/css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="client/css/jquery.gridster.min.css">
+
+		<!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/064330cea8.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <!-- == END APPLICATION HEAD == -->
+</head>
+
+<body>
+  <!-- Bootstrap core JavaScript -->
+  <script src="client/js/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG7PVKB" height="0" width="0"
+      style="display:none;visibility:hidden" sandbox="allow-same-origin"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+		<!-- Site application banner -->
+		<!--stopindex-->
+		<a href="#content" class="sr-only app">Skip to main content</a>
+
+		<header id="banner">
+			<div class="banner-logo">
+				<div class="container app">
+					<div class="row align-items-center">
+
+						<div class="col-md-6 col-xl-4 order-md-2">
+							<a href="https://www.nlr.gov"><div class="logo"><img src="client/img/nlr.png" class="sr-only" alt="National Laboratory of the Rockies"></div></a>
+						</div>
+
+						<div class="col-12 d-md-none">
+							<!-- MOBILE collapsible site search bar -->
+                            <div class="site-search-bar">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center mb-1">
+                                            <nav class="navbar navbar-light" aria-label="Site search">
+                                                <div id="searchbar-collapse-mobile" class="navbar-collapse collapse">
+                                                    <form
+                                                          method="get"
+                                                          class="site-searchbar-form form-inline"
+                                                          action="/search" 
+                                                          id="site-search-form-mobile">
+                                                        <div class="form-group">
+                                                            <label for="querymobile" class="sr-only">Search</label>
+                                                            <input
+                                                                   type="search"
+                                                                   id="querymobile" name="query"
+                                                                   maxlength="2047"
+                                                                   placeholder="Search"
+                                                                   class="form-control">
+                                                            <button type="submit" class="btn btn-default">Search</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!-- End MOBILE collapsible site search bar -->
+						</div>
+
+          <div class="col-md-6 col-xl-8 order-md-1">
+            <a id="link_to_join_page" href="https://nlr.gov/openpath" class="app-name">NLR OpenPATH dashboard</a>
+          </div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--startindex-->
+
+  <!-- TOP NAVIGATION -->
+  <!--stopindex-->
+  <div class="program-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light static-top">
+
+        <div id="program-menu" class="mr-auto">
+          <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggle-label">Menu</span>
+          </button>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navbar-collapse collapse" id="topnav-collapse">
+          <ul class="nav navbar-nav navbar-expand-lg">
+            <li data-topnav="metric" class="navbar-text">
+              Metric:
+              <select id="metric" style="width: 100%"></select>
+            </li>
+            <li data-topnav="month" class="navbar-text">
+              Month:
+              <select id="date" style="width: 100%"></select>
+            </li>
+            <li data-topnav="program" class="navbar-text">
+              Program:
+              <select id="program" style="width: 100%"></select>
+            </li>
+            <li class="form-inline">
+              <button class="btn btn-danger btn-block js-add-new">Add</button>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    <!--container-->
+  </div>
+  <!--program-header-->
+		<!-- mobile search button -->
+		<button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
+			<span class="fas fa-search"></span><span class="sr-only">Toggle Search</span>
+		</button>   
+		<!-- Start Desktop collapsible site search bar -->
+        <div class="site-search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light" aria-label="Site search">
+                            <div class="navbar-collapse collapse" id="searchbar-collapse">
+                                <form
+                                      method="get"
+                                      class="site-searchbar-form form-inline"
+                                      action="/search" 
+                                      id="site-search-form">
+                                    <div class="form-group">
+                                        <label for="query" class="sr-only">Search</label>
+                                        <input
+                                               type="search"
+                                               id="query" name="query"
+                                               maxlength="2047"
+                                               placeholder="Search"
+                                               class="form-control">
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- End Desktop collapsible site search bar -->
+		<!--startindex-->
+	<div id="content" class="container-fluid" role="main">
+    <div class="gridster">
+      <ul>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 text-center">
+        <p class="mt-3" style="color:black">Developed with funding from the Vehicle Technologies Office, Office of
+          Critical Minerals and Energy Innovation, U.S. Department of Energy.</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <a href="https://www.energy.gov/cmei/"><img class="img-fluid mb-1"
+            src="client/img/doe-cmei.png"
+            alt="U.S. Department of Energy Office of Critical Minerals and Energy Innovation"></a>
+      </div>
+    </div>
+                    <!-- SHARETHIS WIDGET (OPTIONAL) -->
+					<!--stopindex-->
+						<div id="page-tools" class="hidden-print">
+							<!-- ShareThis BEGIN -->
+              				<div class="mt-5 text-center text-dark">
+								<p class="mb-2">Share</p>
+								<span class="st-custom-button fa fa-facebook-square mr-3" data-network="facebook" aria-hidden="true" aria-label="Share on Facebook"></span>
+								<span class="st-custom-button fa fa-linkedin-square mr-3" data-network="linkedin" aria-hidden="true" aria-label="Share on Linked In"></span>
+								<span class="st-custom-button fa-brands fa-x-twitter mr-3" data-network="twitter" aria-hidden="true" aria-label="Share on Twitter"></span>
+								<!-- CUSTOM THREADS BUTTON -->
+								<span class="custom-share-button mr-3">
+									<a id="thispage">
+										<img src="client/img/threads.svg" alt="Share on Threads" aria-hidden="true" aria-label="Share on Threads" class="mb-1">
+									</a>
+								</span>
+								<!-- END CUSTOM THREADS BUTTON -->
+								<span class="st-custom-button fa fa-envelope mr-3" data-network="email" aria-hidden="true" aria-label="Share by email"></span>
+								<span class="st-custom-button fas fa-share-alt" data-network="sharethis" aria-hidden="true" aria-label="More share options"></span>
+							</div>
+							<!-- ShareThis END -->
+						</div>
+					<!--startindex-->   
+				</div>
+			</div>
+		</div>
+
+		<!-- == APPLICATION FOOTER == -->
+		<!--stopindex-->
+        <footer id="footer" class="hidden-print">
+
+            <nav class="footertop" aria-label="Main">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a href="https://www.nlr.gov"><strong>National Laboratory of the Rockies</strong></a>
+                        </div>
+                        <div class="col col-lg-7">
+                            <div class="d-flex flex-column flex-lg-row justify-content-lg-start global">
+                                <div><a href="https://www.nlr.gov/about">About</a></div>
+                                <div><a href="https://www.nlr.gov/research">Research</a></div>
+                                <div><a href="https://www.nlr.gov/workingwithus">Partner With Us</a></div>
+                                <div><a href="https://www.nlr.gov/news">News</a></div>
+                                <div><a href="https://www.nlr.gov/careers">Careers</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="footerbottom"  aria-label="Secondary">
+                 <div class="container">
+                     <div class="row">
+                        <div class="col-md-4 col-lg-5">
+                            <div><a href="https://www.nlr.gov/webmaster">Contact Us</a></div>
+                            <div class="mt-2"><a href="https://www.nlr.gov/about/visiting-nrel">Visit</a></div>
+                            <div class="mt-2"><a href="https://www.nlr.gov/news/subscribe">Subscribe to NLR</a></div>
+                            <div class="mt-3">
+                                <ul class="social-links list-inline">
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/nationallaboratoryoftherockies" aria-label="Follow NLR on Facebook"><i class="fa fa-facebook-square"><!--facebook--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/nationalrenewableenergylab/" aria-label="Follow NLR on Instagram"><i class="fa fa-instagram"><!--Instagram--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/national-lab-of-the-rockies/"
+                                    aria-label="Follow NLR on Linked In"><i class="fa fa-linkedin-square"><!--Linked In--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.youtube.com/@nationallaboratoryoftherockies" aria-label="Follow NLR on YouTube"><i class="fa fa-youtube"><!--You Tube--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://x.com/NatLabRockies" aria-label="Follow NLR on X"><i class="fa-brands fa-x-twitter"><!--twitter--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.threads.net/@nationalrenewableenergylab" aria-label="Follow NLR on Threads"><span class="fa-brands fa-threads"><!-- Threads --></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-7 globalsecondary">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="mt-0"><a href="https://www.nlr.gov/accessibility">Accessibility</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/disclaimer">Disclaimer</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/security">Security and Privacy</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/webmaster">Site Feedback</a></div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+									
+                                    <div class="mt-3 mt-sm-0"><a href="https://developer.nrel.gov/">Developers</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://thesource.nrel.gov/">Employees</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <hr>
+                     <div class="mt-4">
+                     <div class="row">
+                        <div class="col-sm-5">
+                             <a href="https://www.alliance-for-energy-innovation.org/"><img src="client/img/alliance-for-energy-innovation-fy26-logo-black.svg" alt="Alliance for Energy Innovation, LLC" class="mb-3" width="auto" height="53" style="width:145px;height:53px;"></a>
+                             <a href="https://www.energy.gov"><img src="client/img/2025-doe-logo-stacked-horizontal.svg" alt="U.S. Department of Energy" class="ml-3" width="203" height="50" style="width:203px;height:50px;"></a>
+                         </div>
+                         <div class="col-12 col-sm-7">
+                              <p class="nrel-attr">The National Laboratory of the Rockies is a national laboratory of the U.S. Department of Energy, Office of Critical Minerals and Energy Innovation, operated under Contract No. DE-AC36-08GO28308.</p>
+                        </div>
+                    </div>
+                     </div>
+                </div>
+            </nav>
+
+  </footer>
+
+  <!--startindex-->
+  <!-- == END APPLICATION FOOTER == -->
+
+  <!-- == GLOBAL APPLICATION SCRIPTS == -->
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Global scripts -->
+  <script src="client/js/app.min.js"></script>
+
+  <!-- Site application scripts -->
+  <script src="client/js/plugins.min.js"></script>
+  <script src="client/js/app.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    function getMonthList(start_month, start_year) {
+      if (isNaN(start_month) || isNaN(start_year)) {
+        console.log("start_month = " + start_month + " start_year " + start_year + " early return");
+        return [];
+      }
+      const date = new Date();
+      const dates = [];
+      const end_month = date.getMonth() + 1;
+      const end_year = date.getFullYear();
+      var current_month = start_month;
+      var current_year = start_year;
+
+      dates.push([current_month, current_year]);
+      while (!(current_month == end_month && current_year == end_year)) {
+        current_month += 1;
+        if (current_month == 13) {
+          current_month = 1;
+          current_year += 1;
+        };
+        console.log("Adding month " + current_month + " year " + current_year);
+        dates.push([current_month, current_year]);
+      };
+      return dates;
+    };
+  </script>
+
+  <script type="text/javascript">
+    function addPreconfiguredMetrics(metricList) {
+      // add the initial metrics by selecting values and then simulating a click
+      // this avoids us having to refactor out the code to add a new plot
+      // which relies heavily on the mappings stored in the options
+      setTimeout(function () {
+        metricList.forEach((plot_val) => {
+          console.log("Adding metric for " + plot_val);
+          $("#metric").val(plot_val);
+          $('.js-add-new').click();
+        });
+      }, 500);
+      // we pick 500 ms here because the delay between working and non-working loads
+      // is 0.098 - 0.066 = 0.032 seconds = 32 ms, so 500 ms delay should be pretty safe
+    };
+
+    /*
+     * Copied and adapted from the phone `dynamic_config.js`
+     * Adapted by supporting program name via parameter to make it
+     * easier to test against localhost
+     */
+    const _getStudyName = function (connectUrl) {
+      const _getFromParamOrDefault = function () {
+        const param_study_name = new URL(connectUrl).searchParams.get("study_config");
+        return param_study_name == null ? "stage-study" : param_study_name;
+      }
+      const orig_host = new URL(connectUrl).hostname;
+      // If we are running this on dev, use a param instead to enable testing
+      if (orig_host == "localhost") { return _getFromParamOrDefault(); }
+      const first_domain = orig_host.split(".")[0];
+      if (first_domain == "openpath-stage") { return _getFromParamOrDefault(); }
+      const openpath_index = first_domain.search("-openpath");
+      if (openpath_index == -1) { return undefined; }
+      const study_name = first_domain.substr(0, openpath_index);
+      return study_name;
+    }
+
+    var mode_studied
+    $(function () {
+      $(document).ready(function () {
+        // Simple solution to program/study plots dropdown; load the config and corresponding metrics.html
+        const STUDY_CONFIG = _getStudyName(window.location);
+        $.getJSON('https://raw.githubusercontent.com/e-mission/op-deployment-configs/main/configs/' + STUDY_CONFIG + '.nrel-op.json', function (data) {
+          // get units
+          const dist_units = (data.display_config.use_imperial) ? "miles" : "kilometers";
+          console.log("Units for display are", data.display_config.use_imperial, dist_units);
+          if (Array.isArray(data.intro.mode_studied)) {
+            mode_studied = data.intro.mode_studied[0];
+          }
+          else {
+            mode_studied = data.intro.mode_studied
+          }
+          // Load list of plots corresponding to study/program
+          dynamic_labels = data.label_options
+          survey_list = []
+          console.log(data.survey_info?.['trip-labels'])
+          if (data.survey_info?.['trip-labels'] === 'ENKETO') { //CASE: SURVEYS
+            surveys = data.survey_info.surveys
+            survey_list = Object.keys(surveys).filter(name => name !== 'UserProfileSurvey')    
+            load_file = "metrics_study_surveys.html"
+            $.get(load_file, function (file) {
+              survey_list.forEach((name) => {
+                var text = '<option ' + 'value="' + name + '" data-sizex="10" data-sizey="8">' + name + '</option>';
+                file = file.concat('\n', text);
+              });
+              console.log("configuring units");
+              const unitConfigured = file.replaceAll("${data.display_config.use_imperial}", dist_units);
+              $('#metric').append(unitConfigured);
+              addPreconfiguredMetrics(survey_list); //only adding the first 6 elements
+            });        
+          }
+          else if (data.intro.program_or_study == 'program') { //CASE: PROGRAM
+            if (dynamic_labels) {
+              console.log("Dynamic Labels are available for: " + STUDY_CONFIG)
+            }
+            else {
+              console.log("Dynamic Labels are unavailable for: " + STUDY_CONFIG)
+            }
+            load_file = "metrics_program.html"
+            $.get(load_file, function (response) {
+              const configuredResponse = response.replaceAll("${data.intro.mode_studied}", mode_studied);
+              console.log("configuring units");
+              const unitConfigured = configuredResponse.replaceAll("${data.display_config.use_imperial}", dist_units);
+              $('#metric').append(unitConfigured);
+              addPreconfiguredMetrics([
+                "ntrips_total",
+                "total_trip_length",
+                "ntrips_purpose",
+                `ntrips_${mode_studied}_purpose`,
+                `ntrips_${mode_studied}_per_weekday`,
+                `sketch_CO2impact_${mode_studied}`
+              ]);
+            });
+          }
+          else  // CASE: STUDY
+          {
+            if (dynamic_labels) {
+             console.log("Dynamic Labels are available for: " + STUDY_CONFIG)
+            }
+            else {
+              console.log("Dynamic Labels are unavailable for: " + STUDY_CONFIG)
+            }
+            load_file = 'metrics_study.html'
+            // $('#metric').load('metrics_study.html');
+            console.log("loading study, replacing units")
+            $.get(load_file, function (response) {
+              console.log("configuring units");
+              const unitConfigured = response.replaceAll("${data.display_config.use_imperial}", dist_units);
+              $('#metric').append(unitConfigured);
+              addPreconfiguredMetrics([
+                "ntrips_total",
+                "total_trip_length",
+                "ntrips_purpose",
+                "ntrips_sensed_per_weekday",
+                "ts_emissions_user"
+              ]);
+            });
+          }
+          // Figure out all months since start date to present
+          var date_options = "<option value=''>All data</option>";
+          const dates = getMonthList(
+            Number.parseInt(data.intro.start_month),
+            Number.parseInt(data.intro.start_year));
+          for (var i = 0; i < dates.length; i++) {
+            const paddedMonth = String(dates[i][0]).padStart(2, '0');
+            const currYear = dates[i][1];
+            // add a trailing _ to support the "All data" option
+            // consistent with the image file construction `imgFile`
+            date_options += `<option value='${currYear}_${paddedMonth}_'>` + dates[i][0] + '/' + dates[i][1] + '</option>';
+          }
+          $('#date').append(date_options);
+          // The firstVal is now "everything", which will have
+          // the biggest numbers and look most impressive
+          // so let's stick with that and not reset to the lastVal
+          /*
+          // const lastVal = $("#date option:last-child").val();
+          // by setting the current val to the last one
+          // $("#date").val(lastVal);
+          */
+          $('#program').load('programs.html');
+          const dynamicPublicDashboardName = `${data.intro.translated_text.en.deployment_name} Public Dashboard`
+          const projectJoinPage = data.server.connectUrl.replace("api", "join");
+          document.title = dynamicPublicDashboardName;
+          $('#link_to_join_page').text(dynamicPublicDashboardName);
+          $('#link_to_join_page').attr('href', projectJoinPage);
+        });
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    var gridster;
+
+    function loadFile(filePath) {
+      var result = null;
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET", filePath, false);
+      xmlhttp.send();
+      if (xmlhttp.status == 200) {
+        result = xmlhttp.responseText;
+      }
+      return result;
+    };
+
+    $(function () {
+      gridster = $(".gridster ul").gridster({
+        widget_base_dimensions: [100, 100],
+        widget_margins: [5, 5],
+        helper: 'clone',
+        resize: {
+          enabled: true
+        }
+      }).data('gridster');
+
+      $('.js-add-new').on('click', async function () {
+        const metric = $("#metric").val();
+        const dateVal = $("#date").val();
+        const program = $("#program").val();
+        const metricLabel = $("#metric option:selected").text();
+        const dateLabel = $("#date option:selected").text();
+        const programLabel = $("#program option:selected").text();
+        const sizex = $("#metric option:selected").data("sizex");
+        const sizey = $("#metric option:selected").data("sizey");
+        const labelText = metricLabel + " " + dateLabel + " " + programLabel;
+        // the date val now has a trailing `_` to support the "entire program" option
+        // the file name is similar to ntrips_purpose_default.png
+        // and without this change, even if we set the dateVal to ''
+        // we would try to load ntrips_purpose__default.png
+        const imgFile = "plots/" + metric + "_" + dateVal + program + ".png";
+        const htmlFile = "plots/" + metric + "_" + dateVal + program + ".html";
+        const altTextFile = "plots/" + metric + "_" + dateVal + program + ".txt";
+        const altText = loadFile(altTextFile);
+        const stackedMetrics = ['ntrips_total', 'ntrips_total_survey', 'ntrips_purpose', 'ntrips_under80', 'ntrips_under80_survey', 'ntrips_commute_mode_confirm',
+                                 'total_trip_length', 'total_trip_length_land', 'total_trip_length_land_survey',`ntrips_${mode_studied}_total`,
+                                 `ntrips_${mode_studied}_purpose`,`total_trip_length_${mode_studied}_replaced_mode`].concat(survey_list);
+        const isStackedMetric = stackedMetrics.includes(metric);
+        const jsonData = { metric, dateVal, program, metricLabel, dateLabel, programLabel, sizex, sizey };
+
+        if (isStackedMetric){
+          const nw = ["<li data-min-sizex='2' data-min-sizey='2'>"
+            + labelText
+            + "&nbsp;"
+            + "<button class= 'btn btn_default addInfo' style='color: black; background-color: none; border-color: white;' data-info='" + encodeURIComponent(JSON.stringify(jsonData))+ "'> More Info </button>"
+            + "&nbsp;"
+            + "<button class='remove'>x</button>"
+            + "<img src='" + imgFile + "' alt='" + altText + "' style='width: 99%; height: 90%; object-fit: scale-down;'>"
+            + "</li>",
+            sizex, sizey];
+          gridster.add_widget.apply(gridster, nw);
+        }
+        else{
+          const nw = ["<li data-min-sizex='2' data-min-sizey='2'>"
+            + labelText
+            + "<button class='remove'>x</button>"
+            + "<img src='" + imgFile + "' alt='" + altText + "' width=90% height=90%>"
+            + "</li>",
+            sizex, sizey];
+          gridster.add_widget.apply(gridster, nw);
+        }
+      });
+
+      $('body').on("click", ".gridster ul > li .addInfo", function () {
+        const additionalInfoButton = $(this);
+        const additionalInfo = JSON.parse(decodeURIComponent(additionalInfoButton.data('info')));
+        const metric = additionalInfo.metric;
+        const dateVal = additionalInfo.dateVal;
+        const program = additionalInfo.program;
+        const metricLabel = additionalInfo.metricLabel;
+        const dateLabel = additionalInfo.dateLabel;
+        const programLabel = additionalInfo.programLabel;
+        const sizex = additionalInfo.sizex;
+        const sizey = additionalInfo.sizey;
+        const labelText = metricLabel + " " + dateLabel + " " + programLabel;
+        const htmlFile = "plots/" + metric + "_" + dateVal + program + ".html";
+
+        const nw_additionalInformation = ["<li data-min-sizex='2' data-min-sizey='2'>"
+          + labelText
+          + "<button class='remove'>x</button>"
+          + "<object data='" + htmlFile + "' type='text/html' style='margin-top: 20px;' width='90%' height='90%'></object>"
+          + "</li>",
+          sizex, sizey];
+        gridster.add_widget.apply(gridster, nw_additionalInformation);
+      });
+
+      $('body').on("click", ".gridster ul > li .remove", function () {
+        gridster.remove_widget($(this).closest('li'));
+      });
+    });
+  </script>
+</body>
+
+</html>

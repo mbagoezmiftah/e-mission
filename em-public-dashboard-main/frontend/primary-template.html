@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--meta http-equiv="Content-Security-Policy" content="
+          default-src 'self' data:;
+          script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://kit.fontawesome.com;
+          style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net 'unsafe-inline';
+          font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com;
+          connect-src 'self' https://ka-f.fontawesome.com;" -->
+
+        <title>Application Title | NLR</title>
+        
+		<!-- == APPLICATION HEAD == -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KG7PVKB');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Search engine code -->
+		<!--#config timefmt="%Y-%m-%d@%H:%M:%S %Z" -->
+		<meta http-equiv="last-modified" content="<!--#echo var='LAST_MODIFIED'-->">
+        
+        <!-- ShareThis -->
+		<script src="https://platform-api.sharethis.com/js/sharethis.js#property=64bee650c73e910012491844&product=inline-share-buttons&amp;source=platform" async="async"></script>
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- iOS icons -->
+		<link rel="apple-touch-icon" href="client/img/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="72x72"   href="client/img/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="client/img/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="client/img/touch-icon-ipad-retina.png">
+
+		<!-- GLOBAL styles -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="client/css/nrel.complete.min.css" rel="stylesheet" type="text/css" >
+
+		<!-- NLR Application styles -->
+		<link href="client/css/nrel.application.min.css" rel="stylesheet" type="text/css" >
+
+		<!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/064330cea8.js" crossorigin="anonymous"></script>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+
+		<!-- == END APPLICATION HEAD == -->
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG7PVKB"
+						  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Site application banner -->
+		<!--stopindex-->
+		<a href="#content" class="sr-only app">Skip to main content</a>
+
+		<header id="banner">
+			<div class="banner-logo">
+				<div class="container app">
+					<div class="row align-items-center">
+
+						<div class="col-md-6 col-xl-4 order-md-2">
+							<a href="https://www.nlr.gov"><div class="logo"><img src="client/img/nlr.png" class="sr-only" alt="National Laboratory of the Rockies"></div></a>
+						</div>
+
+						<div class="col-12 d-md-none">
+							<!-- MOBILE collapsible site search bar -->
+                            <div class="site-search-bar">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col d-flex justify-content-center mb-1">
+                                            <nav class="navbar navbar-light" aria-label="Site search">
+                                                <div id="searchbar-collapse-mobile" class="navbar-collapse collapse">
+                                                    <form
+                                                          method="get"
+                                                          class="site-searchbar-form form-inline"
+                                                          action="/search" 
+                                                          id="site-search-form-mobile">
+                                                        <div class="form-group">
+                                                            <label for="querymobile" class="sr-only">Search</label>
+                                                            <input
+                                                                   type="search"
+                                                                   id="querymobile" name="query"
+                                                                   maxlength="2047"
+                                                                   placeholder="Search"
+                                                                   class="form-control">
+                                                            <button type="submit" class="btn btn-default">Search</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!-- End MOBILE collapsible site search bar -->
+						</div>
+
+						<div class="col-md-6 col-xl-8 order-md-1">
+							<a href="/" class="app-name">Application Name</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--startindex-->
+
+
+		<!-- TOP NAVIGATION -->
+		<!--stopindex-->
+		<div class="program-header">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light" aria-label="Main">
+
+					<div id="program-menu" class="mr-auto">
+						<button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-collapse" aria-controls="topnav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-toggle-label">Menu</span>
+						</button>
+					</div>
+
+					<!-- Navigation -->
+					<div class="navbar-collapse collapse" id="topnav-collapse">
+						<ul class="nav navbar-nav">
+							<li data-topnav="link1" class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+							<li data-topnav="link2" class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+							<li class="dropdown nav-item" data-topnav="link3">	
+								<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Link 3 <span class="fa fa-angle-down"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li class="nav-item"><a href="#" class="nav-link">Sub-Nav 1 <span class="fa fa-home"></span></a></li>
+									<li class="nav-item"><a href="#" class="nav-link">Sub-Nav 2</a></li>
+								</ul>
+							</li>
+							<li data-topnav="link4" class="nav-item"><a href="#" class="nav-link">Link4</a></li>
+						</ul>
+						<ul class="nav navbar-nav ml-auto">
+							<li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+						</ul>
+						<!-- desktop search button -->
+						<button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-none d-md-inline" data-toggle="collapse" data-target="#searchbar-collapse" aria-expanded="false" aria-label="Toggle Search">
+							<span class="fa fa-search" aria-hidden="true"></span>
+						</button>
+					</div>
+
+				</nav>
+			</div><!--container-->
+		</div><!--program-header-->
+		<!-- mobile search button -->
+		<button type="button" class="custom-toggler site-navbar-toggler site-searchbar-toggle d-md-none" data-toggle="collapse" data-target="#searchbar-collapse-mobile" aria-expanded="false" aria-label="Toggle Search">
+			<span class="fa fa-search" aria-hidden="true"></span>
+		</button>   
+		<!-- Start desktop collapsible site search bar -->
+        <div class="site-search-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-light" aria-label="Site search">
+                            <div class="navbar-collapse collapse" id="searchbar-collapse">
+                                <form
+                                      method="get"
+                                      class="site-searchbar-form form-inline"
+                                      action="/search" 
+                                      id="site-search-form">
+                                    <div class="form-group">
+                                        <label for="query" class="sr-only">Search</label>
+                                        <input
+                                               type="search"
+                                               id="query" name="query"
+                                               maxlength="2047"
+                                               placeholder="Search"
+                                               class="form-control">
+                                        <button type="submit" class="btn btn-default">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- End desktop collapsible site search bar -->
+	<!--startindex-->
+	
+	<div class="container" id="content">
+	    <div class="row">
+	        <div class="col-md-9 order-md-last">
+	            <h1>Secondary Page&mdash;Preferred Version</h1>
+	            <p class="lead">This secondary page uses the same header and footer as the landing page.</p>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+	                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+	                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="index.html">Back to application template home page</a>.</p>
+                <!-- SHARETHIS WIDGET (OPTIONAL) -->
+					<!--stopindex-->
+						<div id="page-tools" class="hidden-print">
+							<!-- ShareThis BEGIN -->
+							<div class="mt-5 text-center">
+								<p class="mb-2">Share</p>
+								<span class="st-custom-button fa fa-facebook-square mr-3" data-network="facebook" aria-hidden="true" aria-label="Share on Facebook"></span>
+								<span class="st-custom-button fa fa-linkedin-square mr-3" data-network="linkedin" aria-hidden="true" aria-label="Share on Linked In"></span>
+								<span class="st-custom-button fa-brands fa-x-twitter mr-3" data-network="twitter" aria-hidden="true" aria-label="Share on Twitter"></span>
+								<!-- CUSTOM THREADS BUTTON -->
+								<span class="custom-share-button mr-3">
+									<a id="thispage">
+										<img src="client/img/threads.svg" alt="Share on Threads" aria-hidden="true" aria-label="Share on Threads" class="mb-1">
+									</a>
+								</span>
+								<!-- END CUSTOM THREADS BUTTON -->
+								<span class="st-custom-button fa fa-envelope mr-3" data-network="email" aria-hidden="true" aria-label="Share by email"></span>
+								<span class="st-custom-button fas fa-share-alt" data-network="sharethis" aria-hidden="true" aria-label="More share options"></span>
+							</div>
+							<!-- ShareThis END -->
+						</div>
+					<!--startindex-->   
+					<!-- LAST UPDATED (OPTIONAL) -->
+					<p class="caption text-center">Last Updated Jan. 00, 0000</p> 
+	        </div>
+	        <!-- Site left navigation -->
+	        <!--stopindex-->
+	        <div class="col-md-3 order-md-first hidden-print">
+	            <nav class="sidenav" aria-label="Side">
+	                <ul class="nav flex-column">
+	                    <li class="nav-item"><a href="#" class="nav-link">Link</a>
+	                    </li>
+	                    <li class="nav-item"><a href="#" class="nav-link">Link</a>
+	                        <ul class="nav flex-column"><!-- add .hide class to close nav -->
+	                            <li class="nav-item"><a href="#" class="nav-link">2nd level link</a>
+	                                <ul class="nav flex-column"><!-- add .hide class to close nav -->
+	                                    <li class="nav-item"><a href="#" class="nav-link">3rd level link</a></li>
+	                                </ul>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                </ul>
+	            </nav>
+	        </div>
+	        <!--startindex-->
+	    </div>
+	</div>
+	
+		<!-- == APPLICATION FOOTER | updated 3/2021 == -->
+		<!--stopindex-->
+        <footer id="footer" class="hidden-print">
+
+            <nav class="footertop" aria-label="Main">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <a href="https://www.nlr.gov"><strong>National Laboratory of the Rockies</strong></a>
+                        </div>
+                        <div class="col col-lg-7">
+                            <div class="d-flex flex-column flex-lg-row justify-content-lg-start global">
+                                <div><a href="https://www.nlr.gov/about">About</a></div>
+                                <div><a href="https://www.nlr.gov/research">Research</a></div>
+                                <div><a href="https://www.nlr.gov/workingwithus">Partner With Us</a></div>
+                                <div><a href="https://www.nlr.gov/news">News</a></div>
+                                <div><a href="https://www.nlr.gov/careers">Careers</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="footerbottom"  aria-label="Secondary">
+                 <div class="container">
+                     <div class="row">
+                        <div class="col-md-4 col-lg-5">
+                            <div><a href="https://www.nlr.gov/webmaster">Contact Us</a></div>
+                            <div class="mt-2"><a href="https://www.nlr.gov/about/visiting-nrel">Visit</a></div>
+                            <div class="mt-2"><a href="https://www.nlr.gov/news/subscribe">Subscribe to NLR</a></div>
+                            <div class="mt-3">
+                                <ul class="social-links list-inline">
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/nationallaboratoryoftherockies" aria-label="Follow NLR on Facebook"><i class="fa fa-facebook-square"><!--facebook--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/nationalrenewableenergylab/" aria-label="Follow NLR on Instagram"><i class="fa fa-instagram"><!--Instagram--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/company/national-lab-of-the-rockies/"
+                                        aria-label="Follow NLR on Linked In"><i class="fa fa-linkedin-square"><!--Linked In--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.youtube.com/@nationallaboratoryoftherockies" aria-label="Follow NLR on YouTube"><i class="fa fa-youtube"><!--You Tube--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://x.com/NatLabRockies" aria-label="Follow NLR on Twitter"><i class="fa-brands fa-x-twitter"><!--twitter--></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.threads.net/@nationalrenewableenergylab" aria-label="Follow NLR on Threads"><span class="fa-brands fa-threads"><!-- Threads --></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-7 globalsecondary">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="mt-0"><a href="https://www.nlr.gov/accessibility">Accessibility</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/disclaimer">Disclaimer</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/security">Security and Privacy</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://www.nlr.gov/webmaster">Site Feedback</a></div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+									
+                                    <div class="mt-3 mt-sm-0"><a href="https://developer.nrel.gov/">Developers</a></div>
+                                    <div class="mt-3 mt-sm-2"><a href="https://thesource.nrel.gov/">Employees</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <hr>
+                     <div class="mt-4">
+                     <div class="row">
+                         <div class="col-sm-5">
+                             <a href="https://www.alliance-for-energy-innovation.org/"><img src="client/img/alliance-for-energy-innovation-fy26-logo-black.svg" alt="Alliance for Energy Innovation, LLC" class="mb-3" width="auto" height="53" style="width:145px;height:53px;"></a>
+                             <a href="https://www.energy.gov"><img src="client/img/2025-doe-logo-stacked-horizontal.svg" alt="U.S. Department of Energy" class="ml-3" width="203" height="50" style="width:203px;height:50px;"></a>
+                         </div>
+                         <div class="col-12 col-sm-7">
+                              <p class="nrel-attr">The National Laboratory of the Rockies is a national laboratory of the U.S. Department of Energy, Office of Critical Minerals and Energy Innovation, operated under Contract No. DE-AC36-08GO28308.</p>
+                        </div>
+                    </div>
+                     </div>
+                </div>
+            </nav>
+
+        </footer>
+
+		<!--startindex-->
+		<!-- == END APPLICATION FOOTER == -->
+	
+	    <!-- == GLOBAL APPLICATION SCRIPTS == -->
+	    <!-- Bootstrap -->
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+	    <!-- Global scripts -->
+	    <script src="client/js/app.min.js"></script>
+
+        <!-- Site application scripts -->
+        <script src="client/js/plugins.min.js"></script>
+	
+	</body>
+	</html>
