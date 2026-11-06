@@ -1,6 +1,0 @@
-__pycache__
-.idea/
-.DS_Store
-assets/qrcodes
-data/tokens.csv
-config.py
